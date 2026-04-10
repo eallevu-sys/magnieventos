@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magni Eventos</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3ef;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('foto1.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #c8a97e;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    padding: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Magni Eventos</h1>
+        <p>Hacemos que tu evento se vea increíble</p>
+        <a href="#petit" class="btn">Decoración Petit</a>
+        <a href="#reserva" class="btn">Reservar fecha</a>
+    </div>
+</div>
+
+<!-- INTRO -->
+<section>
+    <h2>Tu evento, listo para brillar</h2>
+    <p>No importa si es en casa o en salón. Creamos espacios que sorprenden y se disfrutan.</p>
+</section>
+
+<!-- DECORACION -->
+<section id="petit">
+    <h2>Decoración Petit</h2>
+    <p>Soluciones prácticas, rápidas y con mucho estilo.</p>
+
+    <div class="productos">
+
+        <div class="card"><h3>Paneles</h3><p>Fondos modernos para fotos.</p></div>
+        <div class="card"><h3>Shimmer</h3><p>Brillo que destaca.</p></div>
+        <div class="card"><h3>LED</h3><p>Frases con personalidad.</p></div>
+        <div class="card"><h3>Mesas</h3><p>Estética y funcionalidad.</p></div>
+        <div class="card"><h3>Globos</h3><p>Arcos y guirnaldas.</p></div>
+
+    </div>
+</section>
+
+<!-- COMBOS -->
+<section>
+    <h2>Combos</h2>
+
+    <div class="productos">
+
+        <div class="card">
+            <h3>Combo Instagram</h3>
+            <p>Panel + globos + mesa. Listo para fotos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Combo Full Party</h3>
+            <p>Panel + shimmer + LED + globos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Personalizado</h3>
+            <p>Diseñamos tu idea.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALERIA GRANDES -->
+<section>
+    <h2>Eventos Grandes</h2>
+    <div class="galeria">
+        <img src="foto3.jpg">
+        <img src="foto4.jpg">
+        <img src="foto5.jpg">
+    </div>
+</section>
+
+<!-- GALERIA PETIT -->
+<section>
+    <h2>Eventos Petit</h2>
+    <div class="galeria">
+        <img src="foto2.jpg">
+    </div>
+</section>
+
+<!-- RESERVA -->
+<section id="reserva">
+    <h2>Reservá tu fecha</h2>
+    <p>Los fines de semana se completan rápido. Asegurá tu lugar.</p>
+
+    <a href="https://calendly.com/magnieventos" class="btn">Reservar ahora</a>
+    <a href="https://wa.me/5493493667602?text=Hola!%20Quiero%20info%20sobre%20un%20evento" class="btn whatsapp">WhatsApp</a>
+</section>
+
+<!-- CONTACTO -->
+<section>
+    <h2>Contacto</h2>
+    <p>📍 Congreso 1832, Sunchales</p>
+    <p>📷 Instagram: @andres.magni</p>
+</section>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://wa.me/5493493667602" class="whatsapp-float">💬</a>
+
+<footer>
+    <p>© 2026 Magni Eventos</p>
+</footer>
+
+</body>
+</html>
